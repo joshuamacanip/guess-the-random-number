@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Guess the Number</title>
+  </head>
+  <body>
+    <div class="game--container">
+      <div class="game--app">
+        <header class="game--header">
+          <h1 class="game--title">Guess the number</h1>
+          <h3 class="try--counter">
+            Tries: <span class="try--counter__num">5</span>
+          </h3>
+        </header>
+
+        <div class="game--content">
+          <div class="game--column">
+            <div class="game--form__section">
+              <label for="guess"
+                >Number:
+                <input
+                  type="number"
+                  class="game--input"
+                  id="guess"
+                  min="1"
+                  max="20"
+                />
+              </label>
+            </div>
+
+            <button class="guess game--btn">Guess</button>
+          </div>
+
+          <div class="game--column">
+            <div class="random--num__display initial--color__style">
+              <p class="random--display">?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="overlay"></div>
+
+    <div class="modal">
+      <p>Do you want to play again?</p>
+    </div> -->
+
+    <div class="reset--container">
+      <button type="button" class="reset--btn">Reset</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
